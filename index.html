@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Portfólio Web</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <h1>Meu Portfolio</h1>
+    <header>
+        <h1>Arthur da Silva Veeck</h1>
+        <br>
+        <img src="img/FotoDesenhada.png" width="200px">
+  <p>Desenvolvedor | Estudante de TI</p>
 
-    <section>
-        <h2>Titulo teste</h2>
-    </section>
+  <nav>
+    <a href="#Competencias">Competencias</a>
+    <a href="#Projetos">Projetos</a>
+    <a href="#Sobre mim">Sobre Mim</a>
+    <a href="#Contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="cont" id="Competencias">
+
+    <h2>Competências</h2>
+<div class="Competencia">
+    <img src="img/HTML5.png" width="200" title="HTML5">
+    <img src="img/CSS3.png" width="200" title="CSS3">
+    <img src="img/BancoDeDados.png" width="200" title="Banco de Dados">
+    <img src="img/Java_09.png" width="200" title="Java">
+  </div>
+
+</section>
+
+<h2 id="Projetos">Projetos</h2>
+<section class="container">
+    
+  <div class="card">
+    <h2>Projeto Sobre LootBox</h2>
+    <img src="img/github.png" width="100px" >
+    <p>Projeto feito para mostrar as consequências da LootBox.</p>
+    <button onclick="irGithub('https://github.com/ArthurVeeck/Projeto-Sobre-Lootbox.git')">Ver mais</button>
+</div>
+
+<div class="card">
+    <h2>Projeto Java</h2>
+    <img src="img/github.png" width="100px">
+    <p>Projeto mostrando um sistema escolar em Java.</p>
+    <br>
+    <button onclick="irGithub('https://github.com/ArthurVeeck/Projeto-Java.git')">Ver mais</button>
+  </div>
+
+  <div class="card">
+    <h2>Projeto Sistema de Login</h2>
+    <img src="img/github.png" width="100px">
+    <p>Projeto em java para fazer um sistema de login funcional.</p>
+    <button onclick="irGithub('https://github.com/ArthurVeeck/SistemaDeLogin.git')">Ver mais</button>
+  </div>
+      <script>
+  function irGithub(link) {
+    window.open(link, "_blank");
+  }
+  </script>
+
+</section>
+
+<h2 id="Sobre mim">Sobre Mim</h2>
+<section class="cont">
+    <div class="Sobremim">
+    <p>  Sou um estudante de Tecnologia da Informação com foco em desenvolvimento web, dedicado à criação de interfaces modernas, funcionais e bem estruturadas. Tenho facilidade em aprender novas tecnologias e busco constantemente evoluir minhas habilidades práticas por meio de projetos.
+<br><br>
+Entre as linguagens que utilizo, o HTML é a que mais me identifico, pois é a base para a construção de páginas web bem organizadas e acessíveis. Gosto de trabalhar com a estrutura dos sites, garantindo clareza no código e uma boa experiência para o usuário.
+<br><br>
+Tenho interesse em desenvolver soluções criativas, com atenção ao design, usabilidade e boas práticas. Meu objetivo é crescer na área de desenvolvimento e contribuir com projetos que unam tecnologia e inovação.
+    </p>
+
+</div>
+
+</section>
+
+<p>&copy;Direitos reservados para Arthur Veeck</p>
+</main>
 </body>
 </html>
