@@ -178,3 +178,39 @@ nav a:hover {
     font-size: 14px;
   }
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #00f7ff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 5px 0;
+    text-align: center;
+  }
+}
